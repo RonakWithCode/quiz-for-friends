@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">quiz for friends</string>
+    <string name="welcome_to_quiz_for_friends">Welcome to Quiz for Friends</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="start_quiz_by_id">Start Quiz by Id</string>
+    <string name="id">Id</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="tap_to_back_in_home_screen">Tap to back in Home Screen</string>
+</resources>

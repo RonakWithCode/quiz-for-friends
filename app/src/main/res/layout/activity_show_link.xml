@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MainActivityColorBackgroundColor"
+    tools:context=".ShowLink">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:contentDescription="@string/tap_to_back_in_home_screen" />
+    <TextView
+        android:id="@+id/shareQuiz"
+        android:textColor="@color/MainActivityColorTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/Links"
+        android:layout_margin="@dimen/_15sdp"
+        android:textSize="@dimen/_58sdp"
+        android:text="Share Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/Links"
+        android:textColor="@color/MainActivityColorTextView"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:textSize="@dimen/_18sdp"
+        android:text="you can Share this link to you friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginStart="@dimen/_1sdp"
+        android:textSize="@dimen/_17sdp"
+        android:id="@+id/CopyLinks"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_below="@+id/Links"
+        android:textAlignment="center"
+        android:textColor="@color/Fix_link_color"
+        android:text="www.google.com\18256260312656"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/_15sdp"
+        app:drawableEndCompat="@drawable/ic_baseline_copy_all_24"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_below="@id/CopyLinks"
+        android:id="@+id/linear_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/facebook"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="30dip"
+            app:riv_border_width="2dip"
+            android:layout_gravity="center"
+            app:riv_border_color="#333333"
+            android:src="@drawable/facebook"
+            app:riv_oval="true" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/instagram"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="@dimen/_2sdp"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            android:background="#fe655a"
+            app:riv_border_width="2dip"
+            android:layout_gravity="center"
+            app:riv_border_color="#333333"
+            android:src="@drawable/instagram"
+            app:riv_oval="true" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/telegram"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/_2sdp"
+
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="30dip"
+            app:riv_border_width="2dip"
+            android:layout_gravity="center"
+            app:riv_border_color="#333333"
+            android:src="@drawable/telegram"
+            app:riv_oval="true" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/whatsapp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="30dip"
+            app:riv_border_width="2dip"
+            android:layout_gravity="center"
+            app:riv_border_color="#333333"
+            android:layout_marginStart="@dimen/_2sdp"
+
+            android:src="@drawable/whatsapp"
+            app:riv_oval="true" />
+      <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/twitter"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+          android:layout_marginStart="@dimen/_2sdp"
+
+          app:riv_corner_radius="30dip"
+            app:riv_border_width="2dip"
+            android:layout_gravity="center"
+            app:riv_border_color="#333333"
+            android:src="@drawable/twitter"
+            app:riv_oval="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

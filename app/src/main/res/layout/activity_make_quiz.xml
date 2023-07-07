@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/MainActivityColorBackgroundColor"
+    tools:context=".MakeQuizActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/question_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:text="X"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>
+            <TextView
+                android:id="@+id/Q_View"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/MainActivityColorTextView"
+                android:text="Question 1"
+                android:textSize="@dimen/_40sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/question"
+                android:layout_below="@+id/Q_View"
+                android:textAlignment="center"
+                android:textSize="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="What is Borm ?"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/linear_option"
+                android:layout_below="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:background="@drawable/round_edit_text"
+                    android:backgroundTint="@color/Round_Button_Color_blue"
+                    android:textColor="@color/Fix_black"
+                    android:textColorHint="@color/Fix_black"
+                    android:textAlignment="center"
+                    android:id="@+id/option1"
+                    android:hint="option 1"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_40sdp"/>
+
+                <EditText
+                    android:id="@+id/option2"
+                    android:background="@drawable/round_edit_text"
+                    android:backgroundTint="@color/Round_Button_Color_blue"
+                    android:textColor="@color/Fix_black"
+                    android:textColorHint="@color/Fix_black"
+                    android:textAlignment="center"
+                    android:hint="option 2"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_40sdp"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linear_option"
+                android:id="@+id/linear_optionCD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                android:background="@drawable/round_edit_text"
+                android:backgroundTint="@color/Round_Button_Color_blue"
+                android:textColor="@color/Fix_black"
+                android:textColorHint="@color/Fix_black"
+                android:textAlignment="center"
+
+                android:id="@+id/option3"
+                android:hint="option 3"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_40sdp"/>
+            <EditText
+                android:id="@+id/option4"
+                android:background="@drawable/round_edit_text"
+                android:backgroundTint="@color/Round_Button_Color_blue"
+                android:textColor="@color/Fix_black"
+                android:textColorHint="@color/Fix_black"
+                android:textAlignment="center"
+                android:hint="option 4"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_40sdp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/linear_optionCD"
+                android:id="@+id/linear_Color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="center"
+                    android:id="@+id/Yellow"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@color/Round_Button_Color_yellow"
+                    app:riv_oval="true"
+                    tools:ignore="OnClick" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="center"
+                    android:id="@+id/red"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@color/Round_Button_Color_red"
+                    app:riv_oval="true"
+                    tools:ignore="OnClick" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="center"
+                    android:id="@+id/blue"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@color/Round_Button_Color_blue"
+                    app:riv_oval="true"
+                    tools:ignore="OnClick" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="center"
+                    android:id="@+id/green"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@color/Round_Button_Color_green"
+                    app:riv_oval="true"
+                    tools:ignore="OnClick" />
+                <LinearLayout
+                    android:id="@+id/clear_text"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_baseline_clear_24"
+                    app:riv_oval="true"/>
+                    <TextView
+                        android:textColor="@color/MainActivityColorTextView"
+                        android:layout_gravity="center"
+                        android:text="Clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/spinner_Ans"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linear_Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:background="@drawable/round_edit_text"
+                android:id="@+id/save"
+                android:textAlignment="center"
+                android:textSize="@dimen/_25sdp"
+                android:text="Save &amp; Next"
+                android:layout_below="@id/spinner_Ans"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

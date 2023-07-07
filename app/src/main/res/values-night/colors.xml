@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- MainActivityColors -->
+    <color name="MainActivityColorBackgroundColor">#262626</color>
+    <color name="MainActivityColorTextView">#FFff</color>
+    <color name="MainActivityColorButtonColor">#FF000000</color>
+
+
+
+    <!-- Create a Due Date calendar Box -->
+    <color name="Due_Date_Calender_box_SaveTextColor">#94abdc</color>
+    <color name="Due_Date_Calender_box_CancelTextColor">#ccdcf6</color>
+
+
+
+    <!-- Round-Button-Colors    -->
+    <color name="Round_Button_Color_yellow">#ffff00</color>
+    <color name="Round_Button_Color_red">#ff0000</color>
+    <color name="Round_Button_Color_blue">#0084ff</color>
+    <color name="Round_Button_Color_green">#adff2f</color>
+
+    <!--    Fix Color for Create MCQ  -->
+    <color name="Fix_black">#FF000000</color>
+    <color name="Fix_link_color">#6d8ab0</color>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/MainActivityColorBackgroundColor"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/MainActivityColorTextView"
+        android:text="Give Some Info"
+        android:textSize="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/text_view"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_margin="@dimen/_15sdp"
+        android:hint="Name"
+        android:layout_below="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/id"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:hint="@string/id"
+        android:visibility="gone"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@id/id"
+        android:layout_marginBottom="@dimen/_27sdp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:id="@+id/cancel"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/Due_Date_Calender_box_CancelTextColor"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/save"
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:textColor="@color/Due_Date_Calender_box_SaveTextColor"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</RelativeLayout>

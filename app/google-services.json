@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "400833158607",
+    "firebase_url": "https://quiz-for-friends-77f6f-default-rtdb.firebaseio.com",
+    "project_id": "quiz-for-friends-77f6f",
+    "storage_bucket": "quiz-for-friends-77f6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400833158607:android:bc7e39d047cd752b7606ba",
+        "android_client_info": {
+          "package_name": "com.crazyostudio.quizforfriends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400833158607-p7t3ds7cg2mml7f1qobflj3oa8vmggjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALpY5ToCy_DDbT_cIgI3_EoBo8-RaRvj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400833158607-p7t3ds7cg2mml7f1qobflj3oa8vmggjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
